@@ -128,7 +128,7 @@ class ZipCodeValidator extends ConstraintValidator
         'LR' => '\\d{4}',
         'LS' => '\\d{3}',
         'LT' => '(LT-)?\\d{5}',
-        'LU' => '(L-)?\\d{4}|(L)?\\d{4}',
+        'LU' => '((L\\d{4})|(L-\\d{4}))',
         'LV' => '(LV-)?\\d{4}',
         'MA' => '\\d{5}',
         'MC' => '980\\d{2}',
@@ -215,11 +215,13 @@ class ZipCodeValidator extends ConstraintValidator
         'ZM' => '\\d{5}',
     );
 
+
     /**
      * {@inheritdoc}
      */
     public function validate($value, Constraint $constraint)
     {
+        
         if (!$constraint instanceof ZipCode) {
             throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\ZipCode');
         }
