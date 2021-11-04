@@ -1,5 +1,7 @@
 # Constraint Class for international Zipcode Validation
 
+This fork just for add new parterns and fix other. 
+
 [![Build Status](https://img.shields.io/travis/barbieswimcrew/zip-code-validator/master.svg?style=flat-square)](https://travis-ci.org/barbieswimcrew/zip-code-validator)
 [![Downloads](https://img.shields.io/packagist/dt/barbieswimcrew/zip-code-validator.svg?style=flat-square)](https://packagist.org/packages/barbieswimcrew/zip-code-validator)
 [![Latest stable version](https://img.shields.io/packagist/v/barbieswimcrew/zip-code-validator.svg?style=flat-square)](https://packagist.org/packages/barbieswimcrew/zip-code-validator)
@@ -13,7 +15,7 @@ This package uses Composer, please checkout the [composer website](https://getco
 The following command will install `zip-code-validator` into your project. It will also add a new entry in your `composer.json` and update the `composer.lock` as well.
 
 ```bash
-$ composer require barbieswimcrew/zip-code-validator
+$ composer require allsetlu/zip-code-validator
 ```
 
 > This package follows the PSR-4 convention names for its classes, which means you can easily integrate `zip-code-validator` classes loading in your own autoloader.
